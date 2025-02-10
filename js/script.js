@@ -132,8 +132,8 @@ unActiveStatebtn.addEventListener('click', () => {
 
 // Проверка состояния при отправке формы
 document.getElementById('quizForm').onsubmit = function (event) {
+    event.preventDefault();
     if (state !== 'active') {
-        event.preventDefault();
         alert('Пожалуйста, выберите состояние квиза: "Активен" или "Не активен".');
     }
 };
