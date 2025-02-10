@@ -49,6 +49,8 @@ document.getElementById('select4').addEventListener('change', () => {
         data.quiz.push(`${data.quiz.length + 1}. Квиз`);
         console.log(data);
         renderOptions();
+    } else {
+        document.getElementById('quizeName').value = selectedValue
     }
 });
 document.querySelectorAll('.card').forEach(group => {
