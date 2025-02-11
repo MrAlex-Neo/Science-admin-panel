@@ -283,7 +283,6 @@ function addQuestionsToTheList() {
     });
     setupButtons();
 }
-addQuestionsToTheList()
 function resetActiveButtons() {
     const buttons = document.querySelectorAll('.question-btn');
     buttons.forEach(button => {
@@ -393,7 +392,6 @@ document.getElementById('textAnswer').onclick = () => {
 document.getElementById('imgAnswer').onclick = () => {
     toggleAnswerBtnState('imgAnswer');
 }
-
 renderAnswers(null, true)
 function renderAnswers(id, textAnswers) {
     console.log(id, textAnswers)
